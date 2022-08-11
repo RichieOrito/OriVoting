@@ -1,4 +1,4 @@
-document.getElementById('submit').addEventListener('click', function(e) {
+document.getElementById('submit','vote').addEventListener('click', function(e) {
     e.preventDefault();
   
   })
