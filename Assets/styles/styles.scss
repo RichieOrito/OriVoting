@@ -124,7 +124,8 @@ section{
 		margin-bottom: 5px;
 		padding: 1rem 1rem;
 		width: 80%;
-		margin: auto;
+		// margin: auto;
+        margin-left: 80px;
 		background-color: var(--color-teal);
         box-shadow: var(--box-shadow-1);
 		border-radius: 8px;
@@ -145,7 +146,8 @@ section{
 	th 
 	{
 	text-align: center;
-	margin: auto;
+	// margin: auto;
+    margin-left: 80px;
 	border: 3px solid var(--color-yellow);
 	padding: 1.4rem;
 	width: 80%;
@@ -237,11 +239,14 @@ section{
         font-size: 1.5em;
       }
       form{
-        .number-input{ 
+        .number-input,
+        .text-input{ 
            margin-bottom: .875em;
            color: var(--color-white);
         }
-        input[type="number"]{
+        input[type="number"],
+        input[type="text"]
+        {
             width: 100%;
             padding: 1em 0 12px;
             padding-left: 0;
@@ -257,9 +262,9 @@ section{
             opacity: 1;
        }
         }
-        input[ placeholder="example: 400"]{
-            color: var(--color-white);
-        }
+        // input[placeholder="example: 400"]{
+        //     color: var(--color-white);
+        // }
         input[type="submit"]{
             color: white;
             background: var(--color-teal);
@@ -295,3 +300,20 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
   }
+//   voting
+.Myvoting{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .myTable{
+        .Info{
+            margin-left: 5px;
+        }
+        table,
+        tr,
+        td,
+        th 
+        {
+        margin-left: 5px;
+        }
+    }
+}

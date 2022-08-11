@@ -145,7 +145,7 @@ section {
   margin-bottom: 5px;
   padding: 1rem 1rem;
   width: 80%;
-  margin: auto;
+  margin-left: 80px;
   background-color: var(--color-teal);
   box-shadow: var(--box-shadow-1);
   border-radius: 8px;
@@ -164,7 +164,7 @@ section {
 .myTable td,
 .myTable th {
   text-align: center;
-  margin: auto;
+  margin-left: 80px;
   border: 3px solid var(--color-yellow);
   padding: 1.4rem;
   width: 80%;
@@ -252,11 +252,13 @@ section {
   color: var(--color-white);
   font-size: 1.5em;
 }
-.form form .number-input {
+.form form .number-input,
+.form form .text-input {
   margin-bottom: 0.875em;
   color: var(--color-white);
 }
-.form form input[type=number] {
+.form form input[type=number],
+.form form input[type=text] {
   width: 100%;
   padding: 1em 0 12px;
   padding-left: 0;
@@ -268,12 +270,10 @@ section {
   border-bottom: 2px solid var(--color-grey-2);
   /*Some sibling magic happens */
 }
-.form form input[type=number]:focus + .separator {
+.form form input[type=number]:focus + .separator,
+.form form input[type=text]:focus + .separator {
   transform: scaleX(1) translateY(-2px);
   opacity: 1;
-}
-.form form input[placeholder="example: 400"] {
-  color: var(--color-white);
 }
 .form form input[type=submit] {
   color: white;
@@ -310,4 +310,18 @@ section {
 .Mypurchase {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.Myvoting {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Myvoting .myTable .Info {
+  margin-left: 5px;
+}
+.Myvoting .myTable table,
+.Myvoting .myTable tr,
+.Myvoting .myTable td,
+.Myvoting .myTable th {
+  margin-left: 5px;
 }/*# sourceMappingURL=styles.css.map */
