@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hamisi Voting App</title>
+</head>
+<body class="main-content">
+    <main>
+        <section class="section sec1 active" id="dashboard">
+            <div class="Mydashboard">
+                <div class="myTable">
+                    <h2 class="Info">Candidate<span> - </span>Information</h2>
+                    <table id="voters">
+                        <tr>
+                        <th>Number Of Votes</th>
+                        <th>Name</th>
+                        </tr>
+                        <tr>
+                        <td>0</td>
+                        <td>Hamisi</td>
+                        </tr>
+                        <tr>
+                        <td>0</td>
+                        <td>Orito</td>
+                        </tr>
+                            <td>0</td>
+                            <td>Kageni</td>
+                        </tr>
+                    </table>
+                </div>
+    <!-- Token Information -->
+                <div class="myToken">
+                    <h2 class="Info">Token<span> - </span>Information</h2>
+                    <table id="voters">
+                        <tr>
+                        <th>Title</th>
+                        <th>Amount</th>
+                        </tr>
+                        <tr>
+                        <td>Total Tokens</td>
+                        <td>10,000</td>
+                        </tr>
+                        <tr>
+                        <td>Sold Tokens</td>
+                        <td>100</td>
+                        </tr>
+                        <tr>
+                        <td>The Price Of Each Token</td>
+                        <td>0.01 Ether</td>
+                        </tr>
+                        <tr>
+                            <td>1 Ether</td>
+                            <td>Balance in the contract</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="section sec2" id="token-purchase">
+            <div class="Mypurchase">
+                <div class="form">
+                    <form action="#">
+                        <div class="number-input">
+                            <label for="amount">The Amount Of :</label>
+                            <input type="number" name="amount" id="amount" placeholder="example: 400" />
+                            <span class="separator"> </span>
+                          </div>
+                          <div class="form-button">
+                            <input type="submit" id="submit" value="Submit"  />
+                          </div>
+                    </form>
+                </div>
+                
+                <div class="myToken">
+                    <h2 class="Info">Token<span> - </span>Information</h2>
+                    <table id="voters">
+                        <tr>
+                        <th>Title</th>
+                        <th>Amount</th>
+                        </tr>
+                        <tr>
+                        <td>Total Tokens</td>
+                        <td>10,000</td>
+                        </tr>
+                        <tr>
+                        <td>Sold Tokens</td>
+                        <td>100</td>
+                        </tr>
+                        <tr>
+                        <td>The Price Of Each Token</td>
+                        <td>0.01 Ether</td>
+                        </tr>
+                        <tr>
+                            <td>1 Ether</td>
+                            <td>Balance in the contract</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+        <section class="section sec3" id="voting"></section>
+        <section class="section sec4" id="search"></section>
+    </main>
+    <!-- button controls -->
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="dashboard">
+            <i class='bx bxs-dashboard'></i>
+        </div>
+        <div class="control control-2 " data-id="token-purchase">
+            <i class='bx bxs-purchase-tag-alt' ></i>
+        </div>
+        <div class="control control-2 " data-id="voting">
+            <i class='bx bxs-check-square' ></i>
+        </div>
+        <div class="control control-2 " data-id="search">
+            <i class='bx bx-search-alt' ></i>
+        </div>
+    </div>
+
+    <script src="Assets/js/app.js"></script>
+</body>
+</html>
